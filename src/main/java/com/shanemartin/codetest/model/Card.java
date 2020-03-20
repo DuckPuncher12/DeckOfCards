@@ -2,7 +2,6 @@ package com.shanemartin.codetest.model;
 
 import java.util.Random;
 
-
 public class Card {
 
     private Suit suit;
@@ -10,7 +9,11 @@ public class Card {
     private CardValue value;
 
     /**
-     * If creating a non specific card, create a random card
+     * If creating a non specific card, create a random card. This would only be
+     * used if adding more functionality beyond scope of this project...but I built
+     * misreading dealOneCard logic and felt like it made sense logic wise as
+     * something the default constructor might have if you wanted to create a card
+     * but not sure what kind.
      */
     public Card() {
         this.value = RandomCardValues();
